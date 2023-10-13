@@ -20,7 +20,7 @@ h6 {
 p {
   margin: 0;
 }
-/* Styling for header and naviagtion*/
+/* Styling for header*/
 header {
   display: flex;
   justify-content: space-between;
@@ -40,7 +40,7 @@ header {
   display: inline-block;
   background-color: rgba(214, 171, 196, 0.749);
 }
-
+/* styling for navigation*/
 nav {
   margin: 10px 20px;
 }
@@ -55,5 +55,46 @@ nav ul li {
   margin: 0 5px;
   text-decoration: underline;
 }
+/*styling for hearo banner pic */
+.hero-banner {
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  width: auto;
+  height: 200px;
+  position: relative;
+}
+.hero-banner h2 {
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+  background-color: azure;
+}
+/*styling for main content and footeer*/
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.page-section{
+  display: flex;
+  justify-content: space-between;
+}
+.left-box{
+width: 20%;
+text-align: right;
+flex-shrink: 0;
+padding-right: 20px;
+border-right: 5px solid black;
+margin: 20px 0 ;
+}
 
+.right-box{
+  margin: 20px 40px ;
+  padding: 20px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.right-box p{
+  text-align:justify;
+}
 
