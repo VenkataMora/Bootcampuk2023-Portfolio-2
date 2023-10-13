@@ -8,22 +8,6 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-header{
-  background-color:rgb(31, 31, 59);
-  height: 75px;
-  color: aqua;
-}
-h1{
-  display: inline-block;
-  align-items: center;
-}
-nav h2{
-  display: inline-block;
-  margin-left: 25px;
-  text-decoration: underline;
-  float: right;
-  margin-top: -30px;
-}
 h1,
 h2,
 h3,
@@ -36,3 +20,39 @@ h6 {
 p {
   margin: 0;
 }
+/* Styling for header and naviagtion*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: gainsboro;
+  flex-wrap: wrap;
+}
+
+.my-name {
+  display: flex;
+  margin: 10px 20px;
+  padding: 2px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+.my-name h1 {
+  display: inline-block;
+  background-color: rgba(214, 171, 196, 0.749);
+}
+
+nav {
+  margin: 10px 20px;
+}
+
+nav ul {
+  margin: 20px 0px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: underline;
+}
+
