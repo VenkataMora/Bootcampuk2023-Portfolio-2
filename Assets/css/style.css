@@ -69,7 +69,7 @@ nav ul li {
   right: 100px;
   background-color: azure;
 }
-/*styling for main content and footeer*/
+/*styling for main content*/
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -97,4 +97,69 @@ margin: 20px 0 ;
 .right-box p{
   text-align:justify;
 }
+/* applying grid for main work section*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-areas:
+    "top top"
+    "ml mr"
+    "bl br";
+ column-gap: 10px;
+ row-gap: 10px;
+}
+/* grid area layout */
+.top{
+  background-image: url("../images/project.jpeg");
+  grid-area: top;
+}
+.ml{
+  background-image: url("../images/02-portfolio-1.jpg");
+  grid-area: ml;
+ 
+}
+.mr{
+  background-image: url("../images/02-portfolio-2.jpg");
+  grid-area: mr;
+}
+.bl{
+  background-image: url("../images/02-portfolio-3.jpg");
+  grid-area: bl;
 
+}
+.br{
+  background-image: url("../images/02-portfolio-4.jpg");
+  grid-area: br;
+ 
+}
+
+.top,.ml,.mr,.bl,.br{
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 5px solid aqua;
+  opacity: 1;
+}
+/*styling for footer */
+h4{
+  position:absolute;
+  border: 2px solid aqua;
+  padding: 5px 2.5px;
+  background-color: aliceblue;
+  bottom: 35px;
+left: -2px;
+}
+.right-box ul li, a{
+  list-style-type:none;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 30px;
+ }
+ .top:hover,.ml:hover,.mr:hover,.bl:hover,.br:hover{
+   transition: ease 0.5;
+   opacity: 0.7;
+   cursor: pointer;
+ }
+ 
